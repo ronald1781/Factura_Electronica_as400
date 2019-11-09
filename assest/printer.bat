@@ -1,0 +1,2 @@
+@echo off
+C:\gs\gs9.27\bin\gswin64c.exe -dPrinted -dBATCH -dNOPAUSE -dNOSAFER -q -dNumCopies=1 -sDEVICE=ljet4 -sOutputFile="%printer%\\192.168.1.90\ALMACEN2202" "C:\wamp64\www\facturacionmym\assest\pdffe\20101759688_01_F022-00060569.pdf"
