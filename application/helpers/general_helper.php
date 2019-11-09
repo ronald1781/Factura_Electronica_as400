@@ -453,23 +453,23 @@ if ( ! function_exists('datos_webservice'))
   function datos_webservice($ipas) {
     $datos='';
     SWITCH($ipas){
-      CASE "192.168.1.110":
-      $usuario="20101759688mymrep02"; 
-      $clave="Mymrep2019*";
+      CASE "produ":
+      $usuario=""; 
+      $clave="";
       $url="https://escondatagate.net/wsParser_2_1/rest/parserWS"; 
       $urlref="https://escondatagate.net";
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
       break;
-      CASE "192.168.1.105":
-      $usuario="20101759688mymrep02";
-      $clave="Mymrep2019*"; 
+      CASE "dev":
+      $usuario="2";
+      $clave="*"; 
       $url="https://calidad.escondatagate.net/wsParser_2_1/rest/parserWS";
       $urlref="https://calidad.escondatagate.net";
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
       break;
-      CASE "192.168.1.92":
-      $usuario="20101759688mymrep02";
-      $clave="Mymrep2019*"; 
+      CASE "calid":
+      $usuario="";
+      $clave=""; 
       $url="https://calidad.escondatagate.net/wsParser_2_1/rest/parserWS";
       $urlref="https://calidad.escondatagate.net";
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
@@ -484,24 +484,24 @@ if ( ! function_exists('datos_webserviceBaja'))
   function datos_webserviceBaja($ipas) {
     $datos='';
     SWITCH($ipas){
-      CASE "192.168.1.110":
-      $usuario="20101759688mymrep02"; 
-      $clave="Mymrep2019*";
+      CASE "prod":
+      $usuario=""; 
+      $clave="";
       $url="https://escondatagate.net/wsParser/rest/parserWS"; 
       $urlref="https://escondatagate.net";
 
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
       break;
-      CASE "192.168.1.105":
-      $usuario="20101759688mymrep02";
-      $clave="Mymrep2019*"; 
+      CASE "dev":
+      $usuario="";
+      $clave=""; 
       $url="https://calidad.escondatagate.net/wsParser/rest/parserWS";
       $urlref="https://calidad.escondatagate.net";
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
       break;
-       CASE "192.168.1.92":
-      $usuario="20101759688mymrep02";
-      $clave="Mymrep2019*"; 
+       CASE "qa":
+      $usuario="2";
+      $clave="*"; 
       $url="https://calidad.escondatagate.net/wsParser/rest/parserWS";
       $urlref="https://calidad.escondatagate.net";
       $datos=["usuario"=>$usuario,"clave"=>$clave,"url"=>$url,"urlref"=>$urlref];
